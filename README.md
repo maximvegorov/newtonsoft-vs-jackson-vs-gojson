@@ -4,10 +4,16 @@ Benchmarks to compare Newtonsoft Json.net, Jackson and go json libraries
 ## To run:
 
 1. Newtonsoft
-> dotnet restore && dotnet run --configuration release
+```bash
+cd newtonsoft && dotnet restore && dotnet run --configuration release
+```
 
 2. Jackson
-> mvn clean package && java -jar target/benchmarks.jar
+```bash
+cd jackson && mvn clean package && java -jar target/benchmarks.jar
+```
 
 3. Go json
-> go test -bench .
+```bash
+cd gojson && go test -bench .
+```
